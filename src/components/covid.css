@@ -1,0 +1,108 @@
+body {
+    background-color: rgb(40, 36, 36);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+h1,
+h2 {
+
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    animation: scaleAnimation 2s infinite alternate;
+    transform: scale(1.2);
+}
+
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+
+
+li {
+    color: white;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-flow: wrap;
+
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6 {
+    width: calc(72%/3);
+    margin: 2%;
+    padding: 2%;
+    text-align: center;
+    transition: 0.3s;
+
+}
+
+.card1 {
+    background: linear-gradient(45deg, transparent,rgb(26, 70, 231), transparent);
+}
+
+.card2 {
+    background: linear-gradient(45deg, transparent,rgb(33, 209, 33), transparent);
+}
+
+.card3 {
+    background: linear-gradient(45deg, transparent,rgb(231, 231, 20), transparent);
+}
+
+.card4 {
+    background: linear-gradient(45deg, transparent,rgb(255, 0, 0), transparent);
+}
+
+.card5 {
+    background: linear-gradient(45deg, transparent,rgb(16, 215, 230), transparent);
+}
+
+.card6 {
+    background: linear-gradient(45deg, transparent,rgb(255, 166, 0), transparent);
+}
+
+
+.card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover,
+.card5:hover,
+.card6:hover {
+    transform: scale(1.1);
+}
+
+.card__name {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.card__name span {
+    font-size: 15px;
+}
+
+.card__total {
+    font-size: 200%;
+    font-weight: bold;
+    text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    /* horizontal-offset, vertical-offset, blur-radius, color */
+
+}
